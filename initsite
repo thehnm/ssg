@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+mkdir -p "$1"/src "$1"/dst
+
+printf "<html>
+  <head>
+    <title></title>
+  </head>" > "$1"/src/_header.html
+
+printf "</html>" > "$1"/src/_footer.html
