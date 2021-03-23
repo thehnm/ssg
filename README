@@ -33,3 +33,10 @@ Uninstallation
 --------------
 
     > sudo make uninstall
+
+
+Credits
+-------
+
+Based on Roman Zolotarev <hi at romanzolotarev dot com> source code
+https://www.romanzolotarev.com/ssg.html
