@@ -1,14 +1,14 @@
-PREFIX = /usr/local
+BINDIR = /usr/local/bin
 
 install: all
-	mkdir -p ${DESTDIR}${PREFIX}/bin
-	cp -f ssg5 ${DESTDIR}${PREFIX}/bin
-	chmod +x ${DESTDIR}${PREFIX}/bin/ssg5
-	cp -f initsite ${DESTDIR}${PREFIX}/bin
-	chmod +x ${DESTDIR}${PREFIX}/bin/initsite
+	mkdir -p ${DESTDIR}${BINDIR}
+	cp -f ssg5 ${DESTDIR}${BINDIR}
+	chmod +x ${DESTDIR}${BINDIR}/ssg5
+	cp -f initsite ${DESTDIR}${BINDIR}
+	chmod +x ${DESTDIR}${BINDIR}/initsite
 
 uninstall:
-	rm -f ${DESTDIR}${PREFIX}/bin/ssg5 \
-		  ${DESTDIR}${PREFIX}/bin/initsite
+	rm -f ${DESTDIR}${BINDIR}/ssg5 \
+		  ${DESTDIR}${BINDIR}/initsite
 
 .PHONY: all install uninstall
