@@ -1,14 +1,14 @@
-BINDIR = /usr/local/bin
+PREFIX = /usr/local/bin
 
 install: all
-	mkdir -p ${DESTDIR}${BINDIR}
-	cp -f ssg6 ${DESTDIR}${BINDIR}
-	chmod +x ${DESTDIR}${BINDIR}/ssg6
-	cp -f initsite ${DESTDIR}${BINDIR}
-	chmod +x ${DESTDIR}${BINDIR}/initsite
+	mkdir -p ${DESTDIR}${PREFIX}
+	cp -f ssg6 ${DESTDIR}${PREFIX}
+	chmod +x ${DESTDIR}${PREFIX}/ssg6
+	cp -f initsite ${DESTDIR}${PREFIX}
+	chmod +x ${DESTDIR}${PREFIX}/initsite
 
 uninstall:
-	rm -f ${DESTDIR}${BINDIR}/ssg6 \
-		  ${DESTDIR}${BINDIR}/initsite
+	rm -f ${DESTDIR}${PREFIX}/ssg6 \
+		  ${DESTDIR}${PREFIX}/initsite
 
 .PHONY: all install uninstall
