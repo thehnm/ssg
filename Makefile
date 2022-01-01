@@ -2,13 +2,13 @@ PREFIX = /usr/local/bin
 
 install: all
 	mkdir -p ${DESTDIR}${PREFIX}
-	cp -f ssg6 ${DESTDIR}${PREFIX}
-	chmod +x ${DESTDIR}${PREFIX}/ssg6
-	cp -f initsite ${DESTDIR}${PREFIX}
-	chmod +x ${DESTDIR}${PREFIX}/initsite
+	cp -f ssg ${DESTDIR}${PREFIX}
+	chmod +x ${DESTDIR}${PREFIX}/ssg
+	cp -f ssg-initsite ${DESTDIR}${PREFIX}
+	chmod +x ${DESTDIR}${PREFIX}/ssg-initsite
 
 uninstall:
-	rm -f ${DESTDIR}${PREFIX}/ssg6 \
-		  ${DESTDIR}${PREFIX}/initsite
+	rm -f ${DESTDIR}${PREFIX}/ssg \
+		  ${DESTDIR}${PREFIX}/ssg-initsite
 
 .PHONY: all install uninstall

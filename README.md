@@ -16,10 +16,10 @@ sudo make install
 The following example requires either lowdown or markdown.pl
 
 ```sh
-initsite test
+ssg-initsite test
 cd test
 echo "# First Website" > src/index.md
-ssg5 src dst 'test' 'http://www'
+ssg src dst 'test' 'http://www'
 ```
 
 The rendered site is available at dst/index.html
